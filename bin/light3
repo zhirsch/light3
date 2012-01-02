@@ -1,0 +1,2 @@
+#!/bin/bash
+exec ruby $(dirname $0)/../lib/light3.rb "$@"
