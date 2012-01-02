@@ -1,2 +1,3 @@
 #!/bin/bash
-exec ruby $(dirname $0)/../lib/light3.rb "$@"
+libdir=$(dirname $0)/../lib
+exec ruby -I"$libdir" "$libdir"/light3.rb "$@"
